@@ -56,7 +56,8 @@ class AgentRunner:
         return response
     
     async def cleanup(self) -> None:
-        for client in self.clients:
+        clients_to_close = list(reversed(self.clients))
+        for client in clients_to_close:
             if client:
                 try:
                     await client.close()
