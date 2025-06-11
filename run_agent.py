@@ -12,8 +12,8 @@ async def run_agent_with_multiple_servers():
 
     try:
         server_configs = [
-            {"url": "http://127.0.0.1:7860"},
-            {"url": "http://127.0.0.1:7861"}
+            {"url": "http://127.0.0.1:7860/sse"},
+            {"url": "http://127.0.0.1:7861/sse"}
         ]
 
         await agent_runner.setup_with_multiple_mcp_servers(server_configs)

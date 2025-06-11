@@ -20,11 +20,10 @@ class MCPClientWrapper:
         self.exit_stack: AsyncExitStack = AsyncExitStack()
         
     async def connect(self) -> None:
-        mcp_path = "/sse"
-        logger.info(f"Connecting to MCP server at {self.server_url}{mcp_path}")
+        logger.info(f"Connecting to MCP server at {self.server_url}")
         
         try:
-            (read, write) = await self.exit_stack.enter_async_context(sse_client(f"{self.server_url}{mcp_path}"))
+            (read, write) = await self.exit_stack.enter_async_context(sse_client(f"{self.server_url}"))
             session = await self.exit_stack.enter_async_context(ClientSession(read, write))
 
             self.session = session
