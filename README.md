@@ -65,6 +65,25 @@ Once the servers are running, you can start the agent:
 python run_agent.py
 ```
 
+### 5. Cursor IDE Integration
+
+You can add the MCP servers to Cursor IDE by adding the following configuration to your Cursor settings:
+
+```json
+{
+  "mcpServers": {
+    "stocks-mcp-server": {
+      "url": "http://127.0.0.1:7860/sse"
+    },
+    "news-mcp-server": {
+      "url": "http://127.0.0.1:7861/sse"
+    } 
+  }
+}
+```
+
+Make sure both servers are running before connecting through Cursor IDE.
+
 ## 📦 Project Structure
 
 ```
