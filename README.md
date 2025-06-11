@@ -18,6 +18,19 @@ A modular system for creating AI agents using the Model Context Protocol (MCP). 
 - 📊 **Detailed Logging**: Comprehensive logging of all operational stages for debugging
 - 🧩 **Modular Architecture**: Clear separation into client and agent components
 
+
+## Demo
+
+
+
+https://github.com/user-attachments/assets/6ea18497-79b7-4ed9-8bc0-d211a6f3efd9
+
+
+
+https://github.com/user-attachments/assets/31aec298-4a60-430c-b8aa-e5c525ebce06
+
+
+
 ## 🚀 Quick Start
 
 ### 1. Installation
