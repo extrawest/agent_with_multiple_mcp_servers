@@ -176,3 +176,5 @@ The framework includes two specialized MCP servers:
 - **Error Handling**: Robust exception handling at all levels
 - **Connection Preservation**: Maintaining active connections for tool usage
 - **Tool Aggregation**: Combining tools from different servers into a unified list
+
+Developed by [extrawest](https://extrawest.com/). Software development company
